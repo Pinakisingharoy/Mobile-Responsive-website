@@ -1,0 +1,247 @@
+
+/* css reset */
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+
+
+/* css variable */
+:root{
+    --navbar-height:59px;
+}
+body{
+    font-family: 'Instrument Serif', serif;
+/* font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif; */
+}
+
+
+/* navigation bar */
+#navbar{
+    display:flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+}
+
+
+
+
+/* logo and image */
+#logo{
+    margin: 5px 5px;
+}
+#logo img{
+    height:55px;
+    margin:4px 25px;
+}
+
+
+
+
+/* Navigation bar list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:3px 22px;
+    border-radius: 22px;
+    text-decoration: none;
+}
+#navbar ul li a:hover {
+color:rgb(17, 17, 17);
+background-color: white;
+}
+
+
+
+
+
+/* home section */
+
+#home{
+    display:flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height:567px;
+    justify-content:center;
+    align-items:center;
+}
+#home::before{
+    content: "";
+    background:url("image/ice-cream-gf49974a22_1920.jpg") no-repeat center center/cover;
+    position:absolute;
+    height:90%;
+    width:100%;
+    top: 0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.6;
+}
+#home h1{
+    color:#647020;
+    color:#43443c;
+    text-align: center;
+    font-size: 1rem;
+
+}
+#home p{
+    color:#183215;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display:flex;
+}
+
+#services .box{
+    border:2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 25px;
+    background-color: #eddddd;
+}
+
+#services .box img{
+    height:170px;
+    display:block;
+    margin:auto;
+}
+
+
+
+/* client section */
+#client-section{
+    height: 344px;
+    position: relative;
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+#clients img{
+    height: 150px;
+}
+.client-item{
+    padding: 44px;
+
+}
+#client-section::before{
+    content: "";
+    position:absolute;
+    background: url(image/c.jpg) no-repeat center center/cover;
+    width:100%;
+    height:80%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+
+/* Contact Section */
+
+#contact{
+    position:relative;
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    background: url(image/c.jpg) no-repeat center center/cover;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+.contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+.contact-box input,
+.contact-box textarea{
+
+    width:100%;
+    height:0.5;
+    border-radius: 9px;
+}
+.contact-box form{
+    width:40%;
+}
+.contact-box label{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+footer{
+    background:black;
+    color:#eddddd;
+    padding:8px 20px;
+}
+
+
+/* ultimate class */
+.center{
+    text-align: center;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding:12px;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding:12px;
+}
+.btn{
+    padding:5px 20px;
+    border:2px solid white;
+    background-color: brown;
+    color:antiquewhite;
+    margin: 14px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor:pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
